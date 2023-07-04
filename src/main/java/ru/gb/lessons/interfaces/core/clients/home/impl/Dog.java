@@ -15,4 +15,18 @@ public class Dog extends Pet {
     public Dog(int id, String name, int numberOfLimbs, LocalDate registrationDate, Owner owner) {
         super(id, name, numberOfLimbs, registrationDate, owner);
     }
+
+    
+}
+
+class Dog implements Soundable, Runnable {
+    @Override
+    public int getSoundSpeed() {
+        return 10;
+    }
+    
+    @Override
+    public int getRunningSpeed() {
+        return 20;
+    }
 }

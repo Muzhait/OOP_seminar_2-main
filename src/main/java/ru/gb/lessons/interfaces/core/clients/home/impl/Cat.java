@@ -15,4 +15,24 @@ public class Cat extends Pet {
     public Cat(int id, String name, int numberOfLimbs, LocalDate registrationDate, Owner owner) {
         super(id, name, numberOfLimbs, registrationDate, owner);
     }
+    
+}
+
+class Cat implements Soundable, Runnable {
+    @Override
+    public int getSoundSpeed() {
+        return 5;
+    }
+    
+    @Override
+    public int getRunningSpeed() {
+        return 15;
+    }
+}
+
+class Bird implements Soundable, Flyable {
+    @Override
+    public int getSoundSpeed() {
+        return 2;
+    }
 }
